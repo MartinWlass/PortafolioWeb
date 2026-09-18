@@ -1,3 +1,4 @@
+ECHO est� activado.
 document.addEventListener("DOMContentLoaded", () => {
     // Desplazamiento suave para los enlaces del menú
     const enlacesMenu = document.querySelectorAll('.navbar-nav a[href^="#"]');
