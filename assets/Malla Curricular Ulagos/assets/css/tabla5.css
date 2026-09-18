@@ -1,0 +1,231 @@
+body {
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(234, 233, 233);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cabeza {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+    align-items: center;
+    background-color: #645c99; /* Color de fondo */
+    padding: 20px 20px;
+    text-transform: uppercase; /* Convierte todo a mayusculas */
+}
+/* buscador */
+input[type="search"] {
+  background-color: #645c99; /* color de fondo */
+  border-radius: 15px;         /* bordes redondeados */
+  border: 2px solid #ccc;      /* borde opcional */
+  padding: 8px 12px;           /* espacio interno */
+  font-size: 16px; 
+}
+input[type="search"]::placeholder {
+    color: white;
+    opacity: 1;
+    font-style: italic;
+}
+
+.menu {
+    background-color: #aaa1e5;
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+    align-items: center;
+    padding: 13px 20px;
+    
+}
+/* Lista de enlaces */
+.menu .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* cada enlace */
+.menu .nav-links li {
+    margin-left: 30px;
+    padding: 0 55px;
+}
+.menu .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 0 10px;
+    
+}
+/* Efecto al pasar el mouse */
+.menu .nav-links li a:hover {
+    background-color: #645c99;
+    color: white;
+    padding: 28px 10px;  /* Cambia el color al hacer hover */
+}
+
+/* centrar tabla */
+table {
+    margin: 0 auto; /* Centra horizontalmente la tabla */
+    border-collapse: collapse; /* Opcional: para que no se vean doble borde */
+}
+
+/* Malla Curricular */
+h1{
+    color:#645c99;
+}
+/* fondo Encabezados anuales */
+th {
+    
+    background-color: #645c99;
+}
+/* letra Encabezados anuales */
+.primero {
+    color: white;
+    text-align: center;
+}
+/* Encabezados semestrales */
+.semestre {
+    background-color: #aaa1e5;
+    
+}
+
+/* Marco de tabla */
+table {
+    border-collapse: collapse;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+th, td {
+    border: 2px solid #aaa1e5;
+    padding: 5px 70px;
+}
+
+/* centrar texto de celda */
+td {
+    text-align: center;
+}
+
+/* Responsive: tabla desplazable y menú hamburguesa */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 28px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #000;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 10px 16px;
+        position: relative;
+    }
+
+    /* Panel lateral fijo (oculto por defecto) */
+    .menu .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 260px;
+        background-color: #645c99; /* color principal del menú */
+        transform: translateX(-100%);
+        transition: transform 0.32s cubic-bezier(.2,.9,.2,1);
+        padding-top: 80px;
+        z-index: 30;
+    }
+
+    .menu.open .nav-links {
+        transform: translateX(0);
+    }
+
+    .menu .nav-links li {
+        margin: 8px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .menu .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 12px 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu .nav-links li a:hover {
+        background: rgba(0,0,0,0.08);
+    }
+
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 40;
+        background: transparent;
+        border: none;
+        padding: 6px;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        display: block;
+        border-radius: 2px;
+        transition: transform 0.28s ease, opacity 0.2s ease;
+    }
+
+    .hamburger span + span {
+        margin-top: 6px;
+    }
+
+    /* Estado abierto: transformar líneas a X */
+    .hamburger.open span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.open span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .cabeza {
+        padding: 12px 14px;
+    }
+
+    input[type="search"] {
+        width: 50%;
+    }
+
+    th, td {
+        padding: 8px 12px;
+    }
+}

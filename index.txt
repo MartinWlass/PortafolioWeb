@@ -1,0 +1,12 @@
+<p>Tengo 25 años y soy estudiante de la Universidad de Los Lagos. En 2025 finalicé mis estudios como Técnico
+                en Informática y actualmente, en 2026, inicio la carrera de Ingeniería en Informática.
+
+                Cuento con experiencia en la venta de productos artesanales pertenecientes a emprendimientos familiares,
+                lo que me ha permitido desarrollar habilidades de responsabilidad y gestión. En mis tiempos libres me
+                especializo en desarrollo web, utilizando tecnologías como HTML, CSS y JavaScript, además de
+                programación en Python.
+
+                También realizo mantenimiento preventivo y correctivo de notebooks y me interesa explorar y trabajar con
+                sistemas operativos basados en Linux, especialmente Linux Mint y Zorin OS. Constantemente refuerzo mis
+                conocimientos y continúo formándome para enfrentar de manera sólida los desafíos futuros en el ámbito de
+                la ingeniería informática.</p>

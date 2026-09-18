@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="theme-color" content="#0f172a"> <!-- Color de tema para el navegador -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav" aria-label="Menú principal">
+            <a href="#inicio" class="logo">Martín Novoa</a>
+
+            <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="nav-list"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul id="nav-list" class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-inicio">
+            <h1 class="inicio-title">Hola, soy Martín Novoa</h1>
+            <p class="inicio-description">Estudiante de Ingeniería en Informática en la Universidad de Los Lagos.</p>
+            <a href="#sobremi" class="btn-siguiente">Conoce más sobre mí</a>
+        </section>
+
+        <section id="sobremi" class="section-sobremi">
+            <h2 class="sobremi-title">Sobre mí</h2>
+
+            <div class="sobremi-container">
+                <div class="sobremi-content">
+                    <p class="sobremi-description">
+                        Tengo 25 años y soy estudiante de la Universidad de Los Lagos. En 2025 finalicé mis estudios
+                        como Técnico
+                        en Informática y actualmente, en 2026, inicio la carrera de Ingeniería en Informática.
+                        <br><br>
+                        Cuento con experiencia en la venta de productos artesanales pertenecientes a emprendimientos
+                        familiares,
+                        lo que me ha permitido desarrollar habilidades de responsabilidad y gestión. En mis tiempos
+                        libres me
+                        especializo en desarrollo web, utilizando tecnologías como HTML, CSS y JavaScript, además de
+                        programación en Python.
+                        <br><br>
+                        También realizo mantenimiento preventivo y correctivo de notebooks y me interesa explorar y
+                        trabajar con
+                        sistemas operativos basados en Linux, especialmente Linux Mint y Zorin OS. Constantemente
+                        refuerzo mis
+                        conocimientos y continúo formándome para enfrentar de manera sólida los desafíos futuros en el
+                        ámbito de
+                        la ingeniería informática.
+                    </p>
+                </div>
+
+                <div class="sobremi-image">
+                    <img src="/assets/image/imagen-portafolio.webp" alt="Foto de Martín Novoa">
+                </div>
+            </div>
+
+            <a href="#proyectos" class="btn-siguiente">Ver mis proyectos</a>
+        </section>
+
+        <section id="proyectos" class="section-proyectos">
+            <h2 class="proyectos-title">Proyectos</h2>
+
+            <div class="proyectos-container">
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="/assets/image/proyecto11.webp" alt="Sitio web de portafolio">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3 class="proyecto-titulo">Portafolio Web</h3>
+                        <p class="proyecto-descripcion">Un sitio web personal para mostrar mis proyectos y habilidades.
+                        </p>
+                        <a href="./webmodelo/index.html" class="proyecto-link">Ver Proyecto</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="/assets/image/proyecto2.webp" alt="Portafolio web versión uno">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3 class="proyecto-titulo">Portafolio Web V1</h3>
+                        <p class="proyecto-descripcion">Mi primer proyecto de portafolio web, construido con HTML y CSS.
+                        </p>
+                        <a href="#" class="proyecto-link">Ver Proyecto</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="/assets/image/proyecto3.webp" alt="Proyecto e-commerce">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3 class="proyecto-titulo">E-commerce</h3>
+                        <p class="proyecto-descripcion">Primer e-commerce hecho con React, creado para un negocio real.
+                        </p>
+                        <a href="https://e-commerce-snowy-eight-21.vercel.app/" class="proyecto-link">Ver Proyecto</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="/assets/image/mallaulagos.webp" alt="Malla curricular Ulagos">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3 class="proyecto-titulo">Malla Ulagos</h3>
+                        <p class="proyecto-descripcion">Diseño y desarrollo de la malla curricular para la Universidad
+                            de Los Lagos.
+                        </p>
+                        <a href="./Malla Curricular Ulagos/tabla4.html" class="proyecto-link">Ver Proyecto</a>
+                    </div>
+                </article>
+            </div>
+
+            <a href="#habilidades" class="btn-siguiente">Ver mis habilidades</a>
+        </section>
+
+        <section id="habilidades" class="section-habilidades">
+            <h2 class="habilidades-title">Habilidades</h2>
+
+            <div class="habilidades-container">
+                <span class="habilidad-badge">HTML</span>
+                <span class="habilidad-badge">CSS</span>
+                <span class="habilidad-badge">JavaScript</span>
+                <span class="habilidad-badge">Python</span>
+                <span class="habilidad-badge">Mantenimiento de Notebooks</span>
+                <span class="habilidad-badge">Sistemas Operativos Linux</span>
+                <span class="habilidad-badge">Sistemas Operativos Windows</span>
+            </div>
+
+            <a href="#contacto" class="btn-siguiente">Contacta conmigo</a>
+        </section>
+
+        <section id="contacto" class="section-contacto">
+            <h2 class="contacto-title">Contacto</h2>
+
+            <div class="contacto-content">
+                <p>Email: martin@ejemplo.com</p>
+                <p>Teléfono: +56 9 XXXX XXXX</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Martín Novoa. Todos los derechos reservados.</p>
+        <a href="#inicio" class="btn-inicio">↑ Ir al Inicio</a>
+    </footer>
+
+    <script src="/javascript/javascript.js"></script>
+</body>
+
+</html>

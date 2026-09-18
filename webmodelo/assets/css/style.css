@@ -1,0 +1,515 @@
+body {
+    margin: 0 auto;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.col-1 { flex: 0 0 auto; width: 8.33333333%; }
+.col-2 { flex: 0 0 auto; width: 16.66666667%; }
+.col-3 { flex: 0 0 auto; width: 25%; }
+.col-4 { flex: 0 0 auto; width: 33.33333333%; }
+.col-5 { flex: 0 0 auto; width: 41.66666667%; }
+.col-6 { flex: 0 0 auto; width: 50%; }
+.col-7 { flex: 0 0 auto; width: 58.33333333%; }
+.col-8 { flex: 0 0 auto; width: 66.66666667%; }
+.col-9 { flex: 0 0 auto; width: 75%; }
+.col-10 { flex: 0 0 auto; width: 83.33333333%; }
+.col-11 { flex: 0 0 auto; width: 91.66666667%; }
+.col-12 { flex: 0 0 auto; width: 100%; }
+
+.item-1 { height: 200px; background-color: green; }
+.item-2 { height: 200px; background-color: red; }
+.item-3 { height: 200px; background-color: yellow; }
+.item-4 { height: 200px; background-color: yellowgreen; }
+
+/* Barra de navegacion */
+.navbar-nav a:hover {
+    color: #30a8e0;
+    transition: .5s;
+}
+
+.navbar {
+    padding: 2rem;
+    background-color: #1b1f23;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #30a8e0;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: #30a8e0;
+    color: #30a8e0;
+}
+
+.hero {
+    background-color: #1b1f23;
+    min-height: 450px;
+    text-align: center;
+}
+
+/* SECCIÓN INICIO */
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url('../image/iglesia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #16445a;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+    width: 80%;
+    margin: auto;
+}
+
+.inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #30a8e0;
+}
+
+/* SECCION SOBRE MI */
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #30a8e0;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col {
+    width: 50%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #30a8e0;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span {
+    background-color: #30a8e0;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #30a8e0;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #30a8e0;
+    z-index: -1;
+    transition: 1s;
+}
+
+/* SECCION HOBBIES */
+.hobbies {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.hobbies .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hobbies h2 {
+    font-size: 48px;
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hobbies .fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.hobbies .fila .col h3 {
+    font-size: 28px;
+    font-family: "Freeman", sans-serif;
+    margin-bottom: 25px;
+}
+
+.hobbies .hobbie > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hobbies .hobbie .barra-hobbie {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hobbies .hobbie .progreso {
+    background-color: #30a8e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.hobbies .hobbie .barra-hobbie span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #30a8e0;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Animaciones de barras */
+.hobbies .hobbie .league-of-legends {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+.hobbies .hobbie .grand-theft-auto-v {
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0% { width: 0%; }
+    100% { width: 45%; }
+}
+
+.hobbies .hobbie .photoshop {
+    width: 0%;
+    animation: 2s drupal forwards;
+}
+@keyframes drupal {
+    0% { width: 0%; }
+    100% { width: 75%; }
+}
+
+.hobbies .hobbie .escuchar-musica {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+.hobbies .hobbie .fotografia {
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0% { width: 0%; }
+    100% { width: 99%; }
+}
+
+/* Estilos generales y componentes */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.imagen-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #30a8e0;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel {
+    width: auto;
+    height: auto;
+}
+
+/* Media query barra de navegación */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+/* Configuración general para que todas las secciones principales ocupen pantalla completa */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Excepción para la barra de navegación para que no mida 100vh */
+.barra-nav {
+    min-height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ajuste para compensar el menú fijo superior para que las secciones no queden detrás */
+body {
+    margin: 0 auto;
+    padding-top: 80px; /* Ajusta según la altura aproximada de tu navbar */
+}
+
+/* SECCIÓN INICIO */
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url('../image/iglesia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); /* Resta el espacio del navbar fijo si lo deseas */
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #16445a;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* SECCION SOBRE MI */
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+/* SECCION HOBBIES */
+.hobbies {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.hobbies .contenido-seccion {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+/* SECCION DATOS PERSONALES */
+.datospersonales {
+    background-color: #161a1d; /* Un tono ligeramente distinto para diferenciarla */
+    color: #fff;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datospersonales .contenido-seccion {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}

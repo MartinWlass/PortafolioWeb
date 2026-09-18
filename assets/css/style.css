@@ -1,0 +1,418 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #38bdf8;
+  --secondary: #22c55e;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER / NAV */
+.header {
+  background-color: rgba(15, 23, 42, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.nav {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 7px 11px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  background-color: rgba(56, 189, 248, 0.1);
+  transform: translateY(-2px);
+}
+
+/* SECCIONES */
+section {
+  scroll-margin-top: 90px;
+}
+
+.section-inicio,
+.section-sobremi,
+.section-proyectos,
+.section-habilidades,
+.section-contacto {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inicio-title,
+.sobremi-title,
+.proyectos-title,
+.habilidades-title,
+.contacto-title {
+  color: var(--primary);
+  margin-bottom: 22px;
+  line-height: 1.1;
+}
+
+.inicio-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.inicio-description {
+  max-width: 700px;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--muted);
+}
+
+/* SOBRE MÍ */
+.sobremi-title,
+.proyectos-title,
+.habilidades-title,
+.contacto-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sobremi-container {
+  width: min(1000px, 100%);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.sobremi-content {
+  flex: 1;
+}
+
+.sobremi-description {
+  background-color: var(--card);
+  color: var(--text);
+  padding: 22px;
+  border-radius: 12px;
+  line-height: 1.7;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.sobremi-image {
+  flex: 0 0 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobremi-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid var(--primary);
+  background-color: var(--card);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* PROYECTOS */
+.proyectos-container {
+  width: min(1000px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.proyecto-card {
+  background-color: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
+}
+
+.proyecto-imagen {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.proyecto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover .proyecto-imagen img {
+  transform: scale(1.05);
+}
+
+.proyecto-contenido {
+  padding: 22px;
+}
+
+.proyecto-titulo {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.proyecto-descripcion {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.proyecto-link {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.proyecto-link:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* HABILIDADES */
+.habilidades-container {
+  width: min(900px, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.habilidad-badge {
+  background-color: var(--card);
+  color: var(--text);
+  padding: 10px 18px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.habilidad-badge:hover {
+  background-color: var(--primary);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+/* CONTACTO */
+.contacto-content {
+  color: var(--muted);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+/* BOTONES */
+.btn-siguiente,
+.btn-inicio {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 13px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 32px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-siguiente:hover,
+.btn-inicio:hover {
+  background-color: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--card);
+  color: var(--muted);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .sobremi-container {
+    flex-direction: column-reverse;
+  }
+
+  .proyectos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .nav {
+    padding: 14px 16px;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .nav-list.active {
+    max-height: 360px;
+    padding: 16px 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  .section-inicio,
+  .section-sobremi,
+  .section-proyectos,
+  .section-habilidades,
+  .section-contacto {
+    min-height: auto;
+    padding: 70px 16px;
+  }
+
+  .sobremi-description {
+    font-size: 0.95rem;
+  }
+
+  .sobremi-image {
+    flex-basis: auto;
+  }
+
+  .sobremi-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .proyectos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .proyecto-imagen {
+    height: 180px;
+  }
+
+  .btn-siguiente,
+  .btn-inicio {
+    width: min(100%, 320px);
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .footer {
+    font-size: 0.95rem;
+  }
+}
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+
+  .proyecto-imagen {
+    height: 150px;
+  }
+}

@@ -1,0 +1,24 @@
+Color base : #0e95e4;
+
+Color detalle:  #b46d27;
+Color principal: #6F6F6F;
+
+
+
+
+.inicio-link { /* Estilos para el enlace de inicio */
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f6aa5d; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+--bg: #0f172a;        /* azul oscuro */
+--card: #1e293b;      /* slate */
+--primary: #38bdf8;   /* azul claro */
+--secondary: #22c55e; /* verde */
+--text: #e5e7eb;
+--muted: #94a3b8;
