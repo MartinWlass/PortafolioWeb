@@ -1,0 +1,163 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Eliminar margen predeterminado */
+    padding: 0; /* Eliminar padding predeterminado */
+    background-color: #a0d9ff; /* Color de fondo claro */
+}
+
+/* Estilo del menu principal */
+header {
+    background-color: #209CEE; /* Color de fondo oscuro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+nav h1 {
+    color: white; /* Color del texto */
+    padding: 10px 0; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 0; /* Eliminar margen */
+}
+
+nav {
+    width: 90%; /* Ancho del nav */
+    margin: 0 auto; /* Centrar el nav */
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+/* Estilo de menu de navegador */
+.menu {
+    list-style: none; /* Eliminar viñetas */
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
+    display: flex; /* Usar flexbox para el menú */
+    justify-content: center; /* Centrar elementos del menú */    
+}
+/* elemento lista */
+.menu li {
+    position: relative; /* Posicionamiento relativo para submenús */
+}
+
+/* Enlace */
+.menu a {
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+    padding: 15px 25px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Efecto hover en enlaces */
+.menu a:hover {
+    color: #a0d9ff; /* Color del texto al pasar el ratón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+.menu a:focus {
+    outline: 2px solid #a0d9ff;
+}
+/* Secciones */
+section {
+    padding: 20px; /* Espaciado interno */
+    max-width: 900px; /* Ancho máximo */
+    margin: 40px auto; /* Margen superior e inferior */
+    width: 100%; /* Ancho de la sección */
+    background-color: white; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+    .menu {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    section {
+        margin: 20px auto; /* Reducir margen en pantallas pequeñas */
+        padding: 15px; /* Reducir padding en pantallas pequeñas */
+    }
+}
+
+section h2 {
+    text-align: center; /* Centrar el texto */
+    color: #209CEE; /* Color del título */
+    margin-bottom: 40px; /* Margen inferior */
+    font-size: 1.8rem; /* Tamaño de fuente */
+}
+
+/* Proyecto */
+.grid-proyectos {
+    display: grid; /* Usar grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+
+.card {
+    background-color: #ffffff; /* Color de fondo blanco */
+    border: 1px solid #eee; /* Borde ligero */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    background-color:#a0d9ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+.card img {
+    width: 100%; /* Ancho completo */
+    border-radius: 8px; /* bordes redondeados */
+    
+}
+.card h3 {
+    color: white; /* texto en color blanco */
+}
+.card h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+/* descripcion de card */
+.descripcion-card {
+    border-radius: 12px; /* bordes redondeados*/
+    background-color: #ffffff6f; /* color de fondo */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+    padding: 16px 15px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior */
+    
+}
+/* contacto */
+.contenedor {
+    border-radius: 12px; /* bordes redondeados */
+    padding: 6px;
+    background-color: #ffffff6f; /* color de fondo */
+}
+
+.contenedor strong{
+    color: #209CEE;
+}
+
+
+.contenedor a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #666;
+}

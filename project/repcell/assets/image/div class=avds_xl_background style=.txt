@@ -1,0 +1,4 @@
+<div class="avds_xl_background" style="background-image:url(images/avds_xl.jpg)"></div>
+
+
+https://repcell.cl/index.php/images/footer.jpg

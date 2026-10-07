@@ -1,5 +1,4 @@
 body {
-    justify-content: center;
     margin: 0;
     background-color: rgb(234, 233, 233);
     text-align: center;
@@ -18,20 +17,23 @@ body {
     font-size: 30px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+    justify-content: space-between; /* Logo a la izquierda, buscador a la derecha */
     align-items: center;
-    background-color: #645c99; /* Color de fondo */
-    padding: 20px 20px;
-    text-transform: uppercase; /* Convierte todo a mayusculas */
+    background-color: #645c99;
+    padding: 20px;
+    text-transform: uppercase;
 }
-/* buscador */
+
+/* Buscador */
 input[type="search"] {
-  background-color: #645c99; /* color de fondo */
-  border-radius: 15px;         /* bordes redondeados */
-  border: 2px solid #ccc;      /* borde opcional */
-  padding: 8px 12px;           /* espacio interno */
-  font-size: 16px; 
+    background-color: #645c99;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
 }
+
 input[type="search"]::placeholder {
     color: white;
     opacity: 1;
@@ -41,76 +43,70 @@ input[type="search"]::placeholder {
 .menu {
     background-color: #aaa1e5;
     display: flex;
-    justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+    justify-content: space-between;
     align-items: center;
     padding: 13px 20px;
-    
 }
+
 /* Lista de enlaces */
 .menu .nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/* cada enlace */
+/* Cada enlace */
 .menu .nav-links li {
-    margin-left: 30px;
-    padding: 0 55px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
+
 .menu .nav-links li a {
     text-decoration: none;
     color: black;
     font-size: 17px;
-    padding: 0 10px;
-    
+    padding: 8px 10px;
+    display: block;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
-/* Efecto al pasar el mouse */
+
+/* Efecto al pasar el mouse (Optimizado para que no salte el diseño) */
 .menu .nav-links li a:hover {
     background-color: #645c99;
     color: white;
-    padding: 28px 10px;  /* Cambia el color al hacer hover */
+    border-radius: 4px;
 }
 
-/* centrar tabla */
+/* Malla Curricular y Tabla */
+h1 {
+    color: #645c99;
+}
+
 table {
     margin: 0 auto; /* Centra horizontalmente la tabla */
-    border-collapse: collapse; /* Opcional: para que no se vean doble borde */
+    border-collapse: collapse; /* Evita dobles bordes */
+    text-align: center;
 }
 
-/* Malla Curricular */
-h1{
-    color:#645c99;
-}
-/* fondo Encabezados anuales */
 th {
-    
     background-color: #645c99;
 }
-/* letra Encabezados anuales */
+
 .primero {
     color: white;
     text-align: center;
 }
-/* Encabezados semestrales */
+
 .semestre {
     background-color: #aaa1e5;
-    
 }
 
-/* Marco de tabla */
-table {
-    border-collapse: collapse;
-    justify-content: center;
-    text-align: center;
-    
-    
-}
 th, td {
     border: 2px solid #aaa1e5;
-    padding: 5px 70px;
+    padding: 10px 30px; /* Ajustado para que no sea excesivo en pantallas grandes */
 }
 
-/* centrar texto de celda */
 td {
     text-align: center;
 }
@@ -119,6 +115,7 @@ td {
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 40px;
 }
 
 .hamburger {
@@ -133,9 +130,11 @@ td {
     justify-content: space-between;
     flex-direction: column;
 }
+
 .hamburger span {
     display: block;
     height: 4px;
+    width: 100%;
     background: #000;
     border-radius: 2px;
 }
@@ -155,7 +154,7 @@ td {
         left: 0;
         height: 100vh;
         width: 260px;
-        background-color: #645c99; /* color principal del menú */
+        background-color: #645c99;
         transform: translateX(-100%);
         transition: transform 0.32s cubic-bezier(.2,.9,.2,1);
         padding-top: 80px;
@@ -181,7 +180,8 @@ td {
     }
 
     .menu .nav-links li a:hover {
-        background: rgba(0,0,0,0.08);
+        background: rgba(0,0,0,0.15);
+        border-radius: 0;
     }
 
     .hamburger {
